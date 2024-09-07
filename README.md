@@ -2,7 +2,7 @@
 
 ### **Problem Statement:**
 
-You are tasked with analyzing resource usage data from a supercomputer, recorded in the FRESCO dataset. For each time stamp, this dataset captures the following:
+You are tasked with analyzing resource usage data from a supercomputer, recorded in the FRESCO data set. For each time stamp, this data set captures the following:
 - Host ID
 - Job ID
 - Event type:
@@ -32,7 +32,7 @@ Your goal is to develop a method to **impute the missing values** at a **specifi
      - Advanced methods like ARIMA or LSTM
 
 3. **Evaluation of Imputation**:
-   - Simulate missing data in a portion of the dataset where the actual values are known. Then, apply your imputation techniques to fill these gaps and compare the filled-in values with the actual data.
+   - Simulate missing data in a portion of the data set where the actual values are known. Then, apply your imputation techniques to fill these gaps and compare the filled-in values with the actual data.
    - Compute a **score** to measure the accuracy of your imputations using the **Root Mean Squared Error (RMSE)**.
 
 4. **Handling Larger Gaps**:
@@ -41,7 +41,7 @@ Your goal is to develop a method to **impute the missing values** at a **specifi
 ### **Expected Deliverables**:
 
 1. **Code Implementation**:
-   - Python code that resamples the dataset at the provided interval and imputes missing values using at least two different techniques.
+   - Python code that resamples the data set at the provided interval and imputes missing values using at least two different techniques.
 
 2. **Score Calculation**:
    - A function or method that calculates the **RMSE** to evaluate the accuracy of the imputed values compared to known values.
@@ -54,14 +54,14 @@ Your goal is to develop a method to **impute the missing values** at a **specifi
 
 ### **Guidelines**:
 
-- The time interval for resampling will be provided when the challenge starts. It will be consistent across all datasets you work with.
+- The time interval for resampling will be provided when the challenge starts. It will be consistent across all data sets you work with.
 - You can use libraries such as **Pandas**, **Polars**, **Statsmodels**, and **TensorFlow/Keras** for the machine learning part.
 - Clearly document your code to explain your thought process and allow others to test different imputation methods.
 
 ### **Evaluation Criteria**:
 
 - **Imputation Accuracy (70%)**:
-   - Participants will be ranked based on the **Root Mean Squared Error (RMSE)**. The lower the RMSE, the better the performance. This score will be calculated by comparing the imputed values against the actual values in the dataset where gaps were artificially introduced.
+   - Participants will be ranked based on the **Root Mean Squared Error (RMSE)**. The lower the RMSE, the better the performance. This score will be calculated by comparing the imputed values against the actual values in the data set where gaps were artificially introduced.
 
 - **Methodology and Creativity (20%)**:
    - Teams that apply more advanced techniques (such as hybrid approaches combining simpler and advanced models) or come up with novel methods will receive higher marks for creativity and methodology.
@@ -69,5 +69,5 @@ Your goal is to develop a method to **impute the missing values** at a **specifi
 - **Efficiency and Documentation (10%)**:
    - Solutions that are well-documented, computationally efficient, and modular will receive additional points.
 
-### **Dataset**:
+### **data set**:
 - You will be provided with the data set containing resource usage metrics, with irregular timestamps and missing values. The exact time interval for resampling will be provided at the start of the challenge.
