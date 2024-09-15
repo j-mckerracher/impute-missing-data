@@ -15,17 +15,17 @@ You are tasked with analyzing resource usage data from a supercomputer, recorded
 - Value
 - Units
 
-However, the data time intervals are irregular. Certain time periods have data recorded every second, while others have gaps of several seconds between data points. 
+However, the data time intervals are irregular. Certain time periods have data recorded every minute, while others have gaps of several minutes between data points. 
 
-Your goal is to develop a method to **impute the missing values** at a **specific time interval**, which will be provided. The challenge is to accurately fill in these gaps, ensuring a consistent time series for further analysis.
+Your goal is to develop a method to **impute the missing values** at a **one-minute interval**. The challenge is to accurately fill in these gaps, ensuring a consistent time series for further analysis.
 
 ### **Objectives:**
 
 1. **Data Resampling**:
-   - Resample the data at the given time interval (e.g., 1 second, 5 seconds, etc.), filling in gaps where data is missing. The time interval will be provided during the challenge.
+   - Resample the data at one-minute interval, filling in gaps where data is missing.
 
 2. **Imputation Techniques**:
-   - Use at least two different methods to fill the missing values. You can choose from techniques such as:
+   - Use at least two different methods to fill the missing values. You can choose any technique. Here are some examples:
      - Forward/Backward Fill
      - Linear Interpolation
      - Spline Interpolation
@@ -36,12 +36,12 @@ Your goal is to develop a method to **impute the missing values** at a **specifi
    - Compute a **score** to measure the accuracy of your imputations using the **Root Mean Squared Error (RMSE)**.
 
 4. **Handling Larger Gaps**:
-   - When faced with larger gaps (e.g., 10+ seconds), simple interpolation may not suffice. Explore an advanced time-series forecasting model, such as ARIMA or LSTM, to handle these gaps. Evaluate how well this method performs compared to simpler approaches.
+   - When faced with larger gaps, simple interpolation may not suffice. Explore an advanced time-series forecasting model, such as ARIMA or LSTM, to handle these gaps. Evaluate how well this method performs compared to simpler approaches.
 
 ### **Expected Deliverables**:
 
 1. **Code Implementation**:
-   - Python code that resamples the data set at the provided interval and imputes missing values using at least two different techniques.
+   - Python code that resamples the data set at the one-minute interval and imputes missing values using at least two different techniques.
 
 2. **Score Calculation**:
    - A function or method that calculates the **RMSE** to evaluate the accuracy of the imputed values compared to known values.
@@ -54,8 +54,8 @@ Your goal is to develop a method to **impute the missing values** at a **specifi
 
 ### **Guidelines**:
 
-- The time interval for resampling will be provided when the challenge starts. It will be consistent across all data sets you work with.
-- You can use libraries such as **Pandas**, **Polars**, **Statsmodels**, and **TensorFlow/Keras** for the machine learning part.
+- The time interval for resampling will be one-minute. It will be consistent across all data sets you work with.
+- There are no restrictions on which libraries can be used.
 - Clearly document your code to explain your thought process and allow others to test different imputation methods.
 
 ### **Evaluation Criteria**:
@@ -70,4 +70,4 @@ Your goal is to develop a method to **impute the missing values** at a **specifi
    - Solutions that are well-documented, computationally efficient, and modular will receive additional points.
 
 ### **data set**:
-- You will be provided with the data set containing resource usage metrics, with irregular timestamps and missing values. The exact time interval for resampling will be provided at the start of the challenge.
+- You will be provided with the data set containing resource usage metrics, with irregular timestamps and missing values. The exact time interval for resampling will be one-minute.
