@@ -51,6 +51,8 @@ Your goal is to develop a method to **impute the missing values** at a **one-min
 
 4. **Report**:
    - A summary report explaining your methods, the strengths and weaknesses of each, and the results of your evaluations. Include your RMSE to demonstrate how well each imputation method performed.
+   - Use of LLMs:
+     - While the use of Large Language Models (LLMs) or AI tools is discouraged, if you leveraged any during your work, please mention how they were used and explain the impact on your solution.
 
 ### **Guidelines**:
 
